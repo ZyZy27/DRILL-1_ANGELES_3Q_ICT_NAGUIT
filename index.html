@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRILL #1</title>
+
+<style>
+    body{
+        font-family: Arial;
+
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bbl{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="h" style="width: 600px; padding: 5px; margin: auto; text-align: center; background-color: lightblue; color: darkblue; border-radius: 20px; border-top: solid 10px darkblue; height: 50px; font-size: 40px;">BASIC CALCULATOR DISPLAY</div>
+
+<div class="bbl" style="position: relative; top: 50px;">
+    <div id="sum" style="border-top: 10px solid darkblue; width: 250px; height: auto; border-radius: 20px; background-color: lightblue; color: darkblue; padding: 20px; text-align: center; margin: 10px;"></div>
+    <div id="dif" style="border-top: 10px solid darkblue; width: 250px; height: auto; border-radius: 20px; background-color: lightblue; color: darkblue; padding: 20px; text-align: center; margin: 10px;"></div>
+    <div id="prod" style="border-top: 10px solid darkblue; width: 250px; height: auto; border-radius: 20px; background-color: lightblue; color: darkblue; padding: 20px; text-align: center; margin: 10px;"></div>
+    <div id="quo" style="border-top: 10px solid darkblue; width: 250px; height: auto; border-radius: 20px; background-color: lightblue; color: darkblue; padding: 20px; text-align: center; margin: 10px;"></div>
+</div>
+
+<script>
+    let num1 = 40;
+    let num2 = 60;
+    let sum = num1 + num2;
+    let dif = num1 - num2;
+    let prod = num1 * num2;
+    let quo = num1 / num2
+
+    document.getElementById("sum").innerHTML =
+        "<h2>SUM OF THE VARIABLES</h2>" + 
+        num1 + " + " + num2 + " = " + sum + "<br>";
+
+    document.getElementById("dif").innerHTML =
+        "<h2>DIFFERENCE OF THE VARIABLES</h2>" +
+        num1 + " - " + num2 + " = " + dif + "<br>";
+
+    document.getElementById("prod").innerHTML =
+        "<h2>PRODUCT OF THE VARIABLES</h2>" +
+        num1 + " * " + num2 + " = " + prod + "<br>";
+
+    document.getElementById("quo").innerHTML =
+        "<h2>QUOTIENT OF THE VARIABLES</h2>" +
+        num1 + " / " + num2 + " = " + quo + "<br>";
+
+</script>
+
+</body>
+</html>
